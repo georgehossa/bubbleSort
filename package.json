@@ -4,12 +4,22 @@
   "description": "Bubble Sort Algorithm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "algorithm",
     "bubbleSort"
   ],
-  "author": "Jorge Ossa",
-  "license": "MIT"
+  "author": "Jorge Ossa <jorgehossa@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "jest": "^26.0.1"
+  },
+  "jest": {
+    "verbose": true,
+    "transformIgnorePatterns": [
+      "<rootDir>/(node_modules)/"
+    ]
+  }
 }
